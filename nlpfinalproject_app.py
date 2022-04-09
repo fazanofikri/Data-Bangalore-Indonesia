@@ -60,7 +60,7 @@ if st.sidebar.checkbox("Show", False, key="6"):
     st.pyplot()
 
 #prediksi
-model = tf.keras.models.load_model("modelnlp")
+model = tf.keras.models.load_model("saved_model.pb")
 st.subheader('Review hotel Anda')
 contoh_review= st.text_area('Coba tulis review hotel yang pernah Anda inap dibawah')
 if contoh_review:
